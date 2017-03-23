@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:weightSum="1.0">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marin.homesecuritywork.first_info">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,24 +13,45 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="434dp"
-            android:layout_height="245dp"
-            app:srcCompat="@drawable/secound_info"
-            android:layout_weight="2.39" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/secound_info" />
 
         <LinearLayout
-            android:layout_width="418dp"
-            android:layout_height="0dp"
-            android:layout_weight="1.55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
             android:gravity="center"
-            android:background="@color/colorPrimaryDark">
+            android:weightSum="1">
 
 
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/wifi" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/wifi"
+                    android:layout_weight="0.27" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="251dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Easily set up cameras monitor in your home our office"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -38,27 +59,31 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.06"
+                android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/skip1"
+                    android:id="@+id/skip"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SKIP" />
 
                 <Button
-                    android:id="@+id/next1"
+                    android:id="@+id/next"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="NEXT" />
@@ -66,5 +91,6 @@
 
 
         </LinearLayout>
-        </LinearLayout>
+    </LinearLayout>
+
 </LinearLayout>
