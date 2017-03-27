@@ -25,13 +25,13 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
 
-                android:text="Tab1" />
+                android:text="Add Manually" />
 
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Tab2" />
+                android:text="Auto" />
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
 
@@ -48,8 +48,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:layout_weight="0.40"
             android:gravity="center"
-            android:text="Welcome to Home Security" />
+            android:text="Welcome to Home Security"
+            android:textAlignment="center" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,7 +61,7 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="76dp"
                 android:clipToPadding="true"
                 android:fillViewport="true"
                 android:scrollbarStyle="insideOverlay"
@@ -84,7 +86,7 @@
                 android:id="@+id/txtWifi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="TextView" />
+                android:text="MANUALLY" />
 
             <Button
                 android:id="@+id/button2"
