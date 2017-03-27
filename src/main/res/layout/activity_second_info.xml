@@ -14,56 +14,96 @@
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
-            android:layout_height="202dp"
-            android:layout_weight="1.10"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
             app:srcCompat="@drawable/secound_info" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimaryDark"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:background="@color/firstBottonColorInfo"
+            android:gravity="center"
+            android:weightSum="1">
 
 
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                app:srcCompat="@drawable/wifi" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.27"
+                    app:srcCompat="@drawable/camera" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.01"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Easily set up cameras monitor in your home our office"
+                    android:textAlignment="center"
+                    android:textColor="@color/firstTextColorInfo"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:weightSum="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/firstBottonColorInfo"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/skipsecound"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.61"
+                    android:background="@color/firstMainColorInfo"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
-                    android:text="SKIP" />
+                    android:text="SKIP"
+                    android:textColor="#FCF6DE"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <Button
+                    android:id="@+id/next2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.59"
+                    android:background="@color/firstMainColorInfo"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
-                    android:text="NEXT" />
+                    android:text="NEXT"
+                    android:textColor="#FCF6DE"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
