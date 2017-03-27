@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.marin.homesecuritywork.register_server_manually"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="0.94"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="Add Manually yor camera"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/addressm"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Address" />
+
+        <EditText
+            android:id="@+id/portm"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Port" />
+
+        <Button
+            android:id="@+id/connectm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Connect"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Clear"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
