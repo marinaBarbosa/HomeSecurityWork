@@ -9,7 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/firstBottonColorInfo"
+        >
 
         <ImageView
             android:id="@+id/imageView1"
@@ -17,7 +19,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:cropToPadding="true"
-            app:srcCompat="@drawable/secound_info" />
+            android:src="@drawable/secound_info" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +31,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="194dp"
+                android:layout_height="181dp"
                 android:orientation="vertical"
                 android:weightSum="1">
 
@@ -40,7 +42,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
                     android:layout_weight="0.27"
-                    app:srcCompat="@drawable/camera" />
+                    android:src="@drawable/wifi" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -52,7 +54,7 @@
                     android:fontFamily="sans-serif-smallcaps"
                     android:text="Easily set up cameras monitor in your home our office"
                     android:textAlignment="center"
-                    android:textColor="@color/firstTextColorInfo"
+                    android:textColor="@color/firstMainColorInfo"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -60,15 +62,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-
+            android:background="@color/firstBottonColorInfo"
             android:weightSum="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/firstBottonColorInfo"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -77,7 +78,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="0.61"
                     android:background="@color/firstMainColorInfo"
                     android:fontFamily="sans-serif-smallcaps"
@@ -90,6 +92,8 @@
                 <Button
                     android:id="@+id/next2"
                     android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_weight="0.59"

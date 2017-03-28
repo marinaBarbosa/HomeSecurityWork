@@ -30,18 +30,11 @@ public class second_info extends AppCompatActivity implements OnClickListener{
     public void onClick(View v)
     {
         if(v == findViewById(R.id.next2)){
-            //do here what u wanna do.
-            Log.v("buttom3", "cenas");
-            setContentView(R.layout.activity_main);
-            Log.v("buttom3", "next456977");
+            setContentView(R.layout.activity_third_info);
 
         }
         else if(v == findViewById(R.id.skipsecound)){
-            Log.v("buttom4", "skipsecound");
-            //do here what u wanna do.
             setContentView(R.layout.activity_main);
-            Log.v("buttom4", "skipsecound");
-
         }
     }
 }
