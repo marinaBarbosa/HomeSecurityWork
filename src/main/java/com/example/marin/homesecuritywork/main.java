@@ -31,7 +31,7 @@ public class main extends Activity {
         tv= (TextView)findViewById(R.id.txtWifiNetworks);
         getWifiNetworksList();
 
-        btnManually=(Button)findViewById(R.id.btnm);
+        btnManually=(Button)findViewById(R.id.skip);
         btnManually.setOnClickListener(new View.OnClickListener() {
 
             @Override
