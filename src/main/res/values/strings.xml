@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HomeSecurityWork</string>
     <string name="title_activity_main">main</string>
+    <string name="third_text">We are build EHS for you!</string>
 </resources>

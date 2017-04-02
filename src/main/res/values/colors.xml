@@ -2,11 +2,14 @@
 <resources>
     <color name="colorPrimary">#E63946</color>
     <color name="colorPrimaryDark">#303F9F</color>
+
+
     <color name="colorAccent">#fff</color>
 
-    <color name="firstMainColorInfo">#80E63946</color>
-    <color name="firstBottonColorInfo">#A3E7FC</color>
-    <color name="firstTextColorInfo">#FCF6DE</color>
+    <color name="backgroundFirstInfo">#DECDF5</color>
+    <color name="textInfo">#F8F1FF</color>
+    <color name="firstBottonColorInfo">#656176</color>
+    <color name="secoundBottonColorInfo">#1B998B</color>
 
 
 
