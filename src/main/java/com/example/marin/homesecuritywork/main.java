@@ -28,15 +28,17 @@ public class main extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         tv= (TextView)findViewById(R.id.txtWifiNetworks);
         getWifiNetworksList();
 
-        btnManually=(Button)findViewById(R.id.skip);
+        btnManually=(Button)findViewById(R.id.btnAuto);
         btnManually.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.activity_register_server_manually);
+                onStop();
             }
         });
 

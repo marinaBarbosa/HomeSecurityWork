@@ -16,9 +16,11 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="visible"
             app:tabGravity="center"
-            app:tabMode="scrollable">
+            app:tabMode="scrollable"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Body1">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/CAMERAS"
@@ -26,19 +28,20 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
 
-                android:text="Add Manually" />
+                android:text="MY CAMERAS" />
 
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Auto" />
+
+                android:text="FAVOURITES" />
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:orientation="vertical"
@@ -47,23 +50,22 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="59dp"
             android:layout_marginTop="50dp"
-            android:layout_weight="0.40"
             android:gravity="center"
             android:text="Welcome to Home Security"
             android:textAlignment="center" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="66dp"
             android:orientation="horizontal"
             android:visibility="visible"
-            android:layout_weight="0.75">
+            android:layout_weight="0.89">
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="269dp"
                 android:clipToPadding="false"
                 android:fillViewport="false"
                 android:scrollbarStyle="insideOverlay"
@@ -80,15 +82,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.66"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/text45"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ADD AUTOMATICALY" />
+                android:text="MY CAMERAS" />
 
             <Button
                 android:id="@+id/btnAuto"

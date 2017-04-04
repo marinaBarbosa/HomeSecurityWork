@@ -27,6 +27,7 @@ public class register_server_manually extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_register_server_manually);
 
         addressManually = (EditText)findViewById(R.id.addressm);
