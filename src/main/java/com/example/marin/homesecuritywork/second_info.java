@@ -56,7 +56,7 @@ import java.util.*;
             }
             else if(v == findViewById(R.id.skip2)){
                 //setContentView(R.layout.activity_main);
-                Intent intent = new Intent(this, main.class);
+                Intent intent = new Intent(this, register_server_manually.class);
                 startActivity(intent);
                 onStop();
             }

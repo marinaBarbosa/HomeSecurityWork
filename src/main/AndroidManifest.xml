@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,31 +14,33 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-    >
-
-    <activity android:name="com.example.marin.homesecuritywork.first_info"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity
+            android:name=".first_info"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".second_info"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-    <activity android:name="com.example.marin.homesecuritywork.second_info"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-        <category android:name="android.intent.category.LAUNCHER" />
-    </activity>
-    <activity android:name="com.example.marin.homesecuritywork.third_info"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".third_info"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+        <activity android:name=".register_server_manually" />
+        <activity android:name=".main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-    </activity>
-    <activity android:name="com.example.marin.homesecuritywork.main">
-        <category android:name="android.intent.category.LAUNCHER" />
-
-    </activity>
-    <activity android:name="com.example.marin.homesecuritywork.register_server_manually"/>
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SuccessActivity" />
+        <activity
+            android:name=".main_with_cameras"
+            android:label="@string/title_activity_main_with_cameras"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>

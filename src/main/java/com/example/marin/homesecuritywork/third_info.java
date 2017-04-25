@@ -44,7 +44,7 @@ public class third_info extends Activity implements OnClickListener{
     public void onClick(View v)
     {
         if(v == findViewById(R.id.skip)){
-            Intent intent = new Intent(this, main.class);
+            Intent intent = new Intent(this, main_with_cameras.class);
             startActivity(intent);
             onStop();
         }

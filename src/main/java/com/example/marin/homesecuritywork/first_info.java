@@ -20,8 +20,7 @@ public class first_info extends Activity implements OnClickListener{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
-            // start register activity.
+
             setContentView(R.layout.activity_first_info);
 
             btn[0] = (Button) findViewById(R.id.next);
@@ -35,37 +34,21 @@ public class first_info extends Activity implements OnClickListener{
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        boolean previouslyStarted = prefs.getBoolean(getString(R.string.app_name), false);
-        if(!previouslyStarted) {
-            SharedPreferences.Editor edit = prefs.edit();
-            edit.putBoolean(getString(R.string.app_name), Boolean.TRUE);
-            edit.commit();
-          //  showHelp();
-        }
-
-    }
-    @Override
     protected void onStop() {
         super.onStop();
-        // The activity is no longer visible (it is now "stopped")
     }
+
     @Override
     public void onClick(View v)
     {
         if(v == findViewById(R.id.next)) {
-            //setContentView(R.layout.activity_second_info);
             Intent intent = new Intent(this, second_info.class);
             startActivity(intent);
             onStop();
         }
 
         else if(v == findViewById(R.id.skip)){
-            //setContentView(R.layout.activity_main);
-            Intent intent = new Intent(this, main.class);
+            Intent intent = new Intent(this, register_server_manually.class);
             startActivity(intent);
             onStop();
         }
