@@ -12,8 +12,10 @@ Tecnologies mandatories:
 - LocalDB to acess log's
 - Take pictures with webcam (by app)
 
-Teachers : Pedro Miguel Teixeira Faria - Sara Maria da Cruz Maia de Oliveira Paiva - Sérgio Ivan Fernandes Lopes
-School : Instituto Politécnico de Viana do Castelo
-Class : CMM (Mobile and Multisensorial Computacion)
+	Teachers : Pedro Miguel Teixeira Faria - Sara Maria da Cruz Maia de Oliveira Paiva - Sérgio Ivan Fernandes Lopes
+
+	School : Instituto Politécnico de Viana do Castelo
+	
+	Class : CMM (Mobile and Multisensorial Computacion)
 
 ![alt tag](https://github.com/marinaBarbosa/HomeSecurityWork/blob/master/documentation/FirstInfo.png)
